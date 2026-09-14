@@ -1,0 +1,142 @@
+/*GERAIS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PALETA DE CORES ATHERA CODE */
+:root {
+    /* Cores de Fundo (Escuros) */
+    --fundo-principal: #0A1317; /* Quase preto */
+    --fundo-secundario: #14353E; /* Teal escuro usado nos gradientes */
+    --fundo-cards: #0D1F24;
+    
+    /* Cores de Fundo (Claros - para contraste) */
+    --fundo-claro: #EEF3F2;
+    --fundo-branco: #FFFFFF;
+
+    /* Cores de Destaque */
+    --destaque-ciano: #41EAD4;
+    --destaque-ciano-claro: #80FFDB;
+    --destaque-roxo: #A06CD5;
+    --destaque-roxo-escuro: #6E44FF;
+
+    /* Textos Clientes (Para fundos escuros) */
+    --texto-claro: #E2E8F0;
+    --texto-mutado-claro: #CBD5E1;
+    --texto-secundario-claro: #94A3B8;
+
+    /* Textos Escuros (Para fundos claros) */
+    --texto-escuro: #334155;
+    --texto-mutado-escuro: #64748B;
+
+    /* Bordas e Detalhes */
+    --borda-escura: #1E4E5B;
+    --borda-clara: #D5DEDC;
+}
+/*BODY*/
+body{
+    background: radial-gradient(circle at top right, var(--fundo-secundario) 0%, var(--fundo-principal) 100%);
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    padding: 3rem 20px 1rem; 
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-size: 4.5rem; 
+    font-weight: 800;
+    color: var(--texto-claro); 
+}
+
+/*BUTTON*/
+.btn-athera {
+    display: block;
+    margin: 3rem auto; /* Centraliza na tela e dá um respiro em cima e embaixo */
+    
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    /* Cores puxadas do :root */
+    color: var(--destaque-ciano);
+    background: transparent;
+    border: 1px solid var(--destaque-ciano);
+    border-radius: 10px;
+    
+    padding: 14px 32px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-athera:hover {
+    /* Usando RGBA direto para manter a transparência do brilho */
+    background: rgba(65, 234, 212, 0.1); 
+    box-shadow: 0 0 20px rgba(65, 234, 212, 0.4); 
+    
+    transform: translateY(-3px);
+}
+
+.btn-athera:active {
+    transform: translateY(-1px);
+    color: var(--destaque-ciano-claro);
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--fundo-principal);
+    border-top: 2px solid var(--borda-escura);
+    color: var(--texto-secundario-claro);
+    
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+footer h2 {
+    color: var(--destaque-ciano);
+}
+
+/*MEDIA*/
+/* TABLETS (Telas menores que 900px) */
+@media (max-width: 900px) {
+    header {
+        padding: 2rem 20px 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem; 
+    }
+
+    footer {
+        padding: 50px 7%;
+    }
+}
+
+/* CELULARES (Telas menores que 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 15px 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    /* Ajuste do botão para mobile */
+    .btn-athera {
+        width: 100%; 
+        padding: 14px 20px;
+    }
+
+    footer {
+        padding: 40px 5%;
+        margin-top: 2rem;
+    }
+}
