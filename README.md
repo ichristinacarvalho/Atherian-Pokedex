@@ -1,17 +1,25 @@
-# 🌌 Atherian Pokédex
+# ⚡ Atherian Pokédex
 
-Um projeto Front-End dinâmico focado no consumo de APIs REST, criado para catalogar criaturas do universo Pokémon com a identidade visual sombria e tecnológica da **Athera Code**.
+> Uma aplicação web interativa que consome uma API externa para buscar, listar e exibir informações detalhadas de diferentes Pokémon com uma interface moderna e temática.
 
-## 🚀 Funcionalidades
-* **Consumo de API:** Integração com a [PokéAPI](https://pokeapi.co/) via Fetch API.
-* **Paginação Sob Demanda:** Sistema de carregamento contínuo (Load More) manipulando a URL de paginação da API.
-* **Renderização Dinâmica:** Criação de elementos DOM (Cards) em tempo de execução usando Template Literals.
-* **Tipagem Colorida:** Dicionário de dados no JavaScript para atribuir cores hexadecimais automaticamente baseadas no tipo de cada Pokémon.
-* **Design Responsivo:** Layout adaptável para Desktop, Tablets e Mobile, utilizando CSS moderno (Variáveis no `:root`) e grid do Bootstrap 5.
+---
+
+## 🚀 Sobre o Projeto
+Este projeto foi desenvolvido com foco no consumo de APIs RESTful usando **JavaScript assíncrono (`fetch`, `async/await`)**, manipulação dinâmica do DOM e estruturação de interfaces limpas e responsivas. A aplicação simula uma Pokédex digital, permitindo consultar dados atualizados de criaturas de forma rápida e visual.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
-* **HTML5:** Semântica e acessibilidade.
-* **CSS3:** Custom properties (CSS Variables), gradientes, media queries e efeitos de hover.
-* **JavaScript (ES6+):** Arrow functions, Promises (`.then`, `.catch`), laços de repetição (`forEach`) e manipulação direta do DOM.
-* **Bootstrap 5:** Sistema de grid (`col`, `row`) e utilitários de espaçamento.
+O projeto foi construído utilizando as seguintes tecnologias:
+* **HTML5:** Estruturação semântica e organização da interface de busca e listagem.
+* **CSS3:** Estilização visual moderna, layout flexível e design responsivo.
+* **JavaScript (ES6+):** Requisições assíncronas à API, tratamento de dados em formato JSON, manipulação de eventos e atualização dinâmica do DOM.
+* **Git & GitHub:** Controle de versão e hospedagem do código.
 
+---
+
+## ⚙️ Funcionalidades
+* **Consumo de API:** Busca dados em tempo real de uma base externa de Pokémon.
+* **Busca e Listagem:** Permite encontrar Pokémon específicos de forma dinâmica.
+* **Exibição de Detalhes:** Apresenta informações como sprites, tipos, habilidades e características.
+* **Interface Responsiva:** Layout adaptado para uso fluido em computadores, tablets e smartphones.
